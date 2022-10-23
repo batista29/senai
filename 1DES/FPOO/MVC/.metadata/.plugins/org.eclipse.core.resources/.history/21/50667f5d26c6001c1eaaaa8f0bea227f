@@ -1,0 +1,24 @@
+package modelo;
+
+import java.util.Calendar;
+
+public class Pessoas {
+	
+	private String name;
+	private int nasc;
+	private int idade;
+	public Pessoas(String entrada) {
+		
+		Calendar atual = Calendar.getInstance();
+		name = (entrada.split(";")[0]);
+		nasc = Integer.parseInt(entrada.split(";")[1]);
+		idade = Integer.parseInt(entrada.split(";")[2]);
+		idade = atual.get(Calendar.YEAR) - nasc;
+	
+	}
+	
+	public String salvarPessoa() {
+		return name + idade;
+	}
+
+}

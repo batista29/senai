@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="carregar()">
+    <div class="departamentos">
+        <table>
+            <thead>
+                <tr>
+                    <th>cod</th>
+                    <th>nome</th>
+                </tr>
+                <tr class="tabela modelo">
+                    <td id="cod_depto"></td>
+                    <td id="nome_depto"></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div>
+        <button onclick="openModal()">x</button>
+    </div>
+    <div class="modal model">
+        <p>Digite o código do departamento que deseja excluir</p>
+        <input type="number" id="inp_cod">
+        <button onclick="excluir()">x</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

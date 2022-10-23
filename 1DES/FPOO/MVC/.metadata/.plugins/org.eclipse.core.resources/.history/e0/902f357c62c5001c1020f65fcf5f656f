@@ -1,0 +1,16 @@
+package controle;
+
+import java.util.ArrayList;
+import modelo.Planilha;
+
+public class ProocessaPlanilha {
+
+	private DAO dao = new DAO();
+
+	static ArrayList<Planilha> linhas = new ArrayList<>();
+
+	public static void carregar() {
+
+	}
+
+}

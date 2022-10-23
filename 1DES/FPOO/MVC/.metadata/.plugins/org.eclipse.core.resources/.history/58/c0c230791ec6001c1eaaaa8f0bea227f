@@ -1,0 +1,51 @@
+package controle;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import modelo.Pessoas;
+
+public class DAO {
+
+	private BufferedWriter bw;
+	private BufferedReader br;
+
+	private String entrada = "C:\\Users\\des\\Desktop\\classificacao\\pessoas\\dados\\pessoas.csv";
+	private String saida = "C:\\Users\\des\\Desktop\\classificacao\\pessoas\\dados\\saida.csv";
+
+	public ArrayList<Pessoas> abrir() throws IOException {
+
+		ArrayList<Pessoas> linhas = new ArrayList<>();
+		Pessoas p;
+
+		try {
+			br = new BufferedReader(new FileReader(entrada));
+			String l = br.readLine();
+			while (l != null) {
+				p = new Pessoas(l);
+				linhas.add(p);
+				l = br.readLine();
+
+			}
+
+			br.close();
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+		return linhas;
+
+	}
+	
+	public void salvarPessoa(ArrayList<Pessoas> linhas) {
+		bw = new BufferedWriter(new FileWriter(Saida));
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package controle;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+
+public class DAO {
+	
+	private BufferedWriter bw;
+	private BufferedReader br;
+
+}

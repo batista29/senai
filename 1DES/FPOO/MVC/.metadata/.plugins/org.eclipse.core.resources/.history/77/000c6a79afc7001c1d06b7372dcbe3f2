@@ -1,0 +1,12 @@
+package visao;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+import controle.ProcessaAluno;
+
+public class TelaNota extends JButton implements ActionListener  {
+	
+	
+}

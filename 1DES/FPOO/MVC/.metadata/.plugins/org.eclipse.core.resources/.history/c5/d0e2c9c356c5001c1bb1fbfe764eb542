@@ -1,0 +1,14 @@
+package controle;
+//objeto de acesso a datas
+
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+
+public class DAO {
+
+	private BufferedWriter bw;
+	private BufferedReader br;
+
+	private String entrada = "C:\\Users\\des\\Desktop\\classificacao\\planilha\\dados\\entrada.csv";
+	private String saida = "C:\\Users\\des\\Desktop\\classificacao\\planilha\\dados\\entrada.csv";
+}

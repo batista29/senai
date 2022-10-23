@@ -1,0 +1,15 @@
+package visao;
+
+import java.util.Scanner;
+
+public class TesteConsole {
+	
+	private static Scanner scaen = new Scanner(System.in);
+	
+	public static void Main(String[] args) {
+		
+		
+		
+	}
+
+}

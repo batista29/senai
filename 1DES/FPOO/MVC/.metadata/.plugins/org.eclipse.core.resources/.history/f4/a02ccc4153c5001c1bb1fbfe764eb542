@@ -1,0 +1,25 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Tela {
+
+	static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		int menu = 0;
+
+		while (menu != 5) {
+			System.out.println("1-Adição\n 2-Multiplicação\n 3-Subtração \n 4-Divisão \n 5-Sair");
+			System.out.println("1");
+			System.out.println("");
+			System.out.println("");
+			System.out.println("Sair");
+			menu = scan.nextInt();
+		}
+
+		
+	}
+
+}

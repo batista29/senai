@@ -1,0 +1,30 @@
+package visao;
+
+import java.util.Scanner;
+
+import controle.UsuarioProcessa;
+
+public class TesteConsole {
+	
+	private static Scanner scan = new Scanner(System.in);
+	
+	public static void Main(String[] args) {
+		
+		Usuario.Processa.carregar();
+		System.out.println();
+		int indice = UsuarioProcessa.checarEmail(scan.next());
+		if (indice != -1) {
+		System.out.println();
+		String senha = scan.next();
+		if(UsuarioProcessa.checarSenha(indce, senha)) {
+			System.out.println();
+		}else {
+			System.out.println("Acesso negado");
+		}
+		}else {
+			System.out.println("Usuario não encontrado");
+		}
+		
+	}
+
+}

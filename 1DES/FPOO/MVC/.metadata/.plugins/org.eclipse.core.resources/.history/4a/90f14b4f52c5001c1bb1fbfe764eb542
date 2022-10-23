@@ -1,0 +1,19 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Tela {
+
+	static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		int menu = 0;
+
+		while (menu != 5) {
+
+		}
+
+	}
+
+}

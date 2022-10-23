@@ -1,0 +1,12 @@
+package modelo;
+
+public class Pessoas {
+	
+	private String name;
+	private String nasc;
+	
+	public Pessoas(String entrada) {
+		
+	}
+
+}

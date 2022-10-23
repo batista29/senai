@@ -1,0 +1,16 @@
+package visao;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import controle.ProcessaAluno;
+
+public class TelaNota{
+	
+	private static final long serialVersionUID = 1L;
+	private JPanel painel;
+
+}

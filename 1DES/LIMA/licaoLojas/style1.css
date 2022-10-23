@@ -1,0 +1,35 @@
+header{
+    background-color: rgb(255, 255, 255);
+    height: 12vh;
+}
+body{
+    background-color: rgb(169, 214, 218);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    padding-left: 95vh;
+}
+.roupas{
+    height: 27vh;
+    border: 5px solid rgb(7, 7, 31);
+}
+.container{
+    padding-top: 5VH;
+}
+.escada{
+    padding-top: 2vh;
+}
+.chuteiras{
+    padding-left: 17vh;
+    padding-top: 2vh;
+}
+footer{
+    height: 60vh;
+    background-image: url(https://images3.alphacoders.com/914/thumb-1920-914671.png);
+}
+.roupas2{
+    height: 27vh;
+    border: 3px solid rgb(15, 105, 146);
+}

@@ -1,0 +1,42 @@
+package visao;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TesteConsole extends JFrame{
+	
+	private static final long serialVersionUID = 1L;
+	// Atributos da tela
+	private JPanel painel;
+	private JLabel rotulo1;
+	private JButton carregar;
+	
+	TesteConsole() {
+		
+		setTitle("ALEATÓRIOS");
+		setBounds(650, 200, 400, 230);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		painel = new JPanel(); //Painel de elementos
+		setContentPane(painel); //Configua o painel
+		setLayout(null);
+		
+		rotulo1 = new JLabel("APERTE PARA GERAR NÚMEROS ALEATÓRIOS");
+		rotulo1.setBounds(80, 20, 200, 20);
+		
+		carregar = new JButton("Carregar Aleatórios");
+		carregar.setBounds(130, 60, 200, 30);
+		
+		painel.add(rotulo1);
+		painel.add(carregar);
+	}
+	
+	public static void main(String[] args) {
+		TesteConsole tela = new TesteConsole();
+		tela.setVisible(true);
+	}
+
+
+}

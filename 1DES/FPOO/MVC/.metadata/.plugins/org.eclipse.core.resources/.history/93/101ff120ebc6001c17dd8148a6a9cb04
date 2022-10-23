@@ -1,0 +1,20 @@
+package visao;
+
+import java.util.Scanner;
+
+import controle.UsuarioProcessa;
+
+public class TesteConsole {
+	
+	private static Scanner scan = new Scanner(System.in);
+	
+	public static void Main(String[] args) {
+		
+		Usuario.Processa.carregar();
+		System.out.println();
+		int indice = UsuarioProcessa.checarEmail(scan.next());
+		if (Usuario.Processa.checarEmail(scan.next()) != -1);
+		
+	}
+
+}

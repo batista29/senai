@@ -1,0 +1,13 @@
+package modelo;
+
+public class Planilha {
+	
+	private int v1;
+	private int v2;
+	
+	public Planilha(String entrada){
+		v1 = Integer.parseInt(entrada.split(";")[0]);
+		v2 = Integer.parseInt(entrada.split(";")[1]);
+	}
+
+}

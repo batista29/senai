@@ -1,0 +1,12 @@
+package controle;
+
+import java.util.ArrayList;
+
+import modelo.Usuario;
+
+public class UsuarioProcessa {
+	
+	ArrayList<Usuario> usuario = new ArrayList<>();
+	UsuarioDAO ud = new UsuarioDAO();
+
+}

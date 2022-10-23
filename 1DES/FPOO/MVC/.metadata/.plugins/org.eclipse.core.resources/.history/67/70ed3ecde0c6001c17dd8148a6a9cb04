@@ -1,0 +1,25 @@
+package visao;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Random;
+import java.util.ArrayList;
+
+public class Menu {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br;
+		String entrada = "C:\\Users\\des\\Desktop\\classificacao\\aleatorios\\dados\\entrada.csv";
+		ArrayList<Integer> linhas = new ArrayList<>();
+	
+		br = new BufferedReader(new FileReader(entrada));
+		String l = br.readLine();
+		while(l != null) {
+			linhas.add(Integer.parseInt(l));
+			l = br.readLine();
+		}
+	br.close();
+	}
+}

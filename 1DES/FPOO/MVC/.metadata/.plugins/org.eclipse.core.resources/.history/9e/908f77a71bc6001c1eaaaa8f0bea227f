@@ -1,0 +1,12 @@
+package modelo;
+
+public class Planilha {
+	
+	private String name;
+	private String nasc;
+	
+	public Planilha(String entrada) {
+		
+	}
+
+}

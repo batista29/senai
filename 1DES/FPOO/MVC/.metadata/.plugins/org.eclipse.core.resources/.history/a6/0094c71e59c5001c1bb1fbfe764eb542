@@ -1,0 +1,32 @@
+package controle;
+//objeto de acesso a datas
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.io.BufferedReader;
+import modelo.Planilha;
+
+public class DAO {
+
+	private BufferedWriter bw;
+	private BufferedReader br;
+
+	private String entrada = "C:\\Users\\des\\Desktop\\classificacao\\planilha\\dados\\entrada.csv";
+	private String saida = "C:\\Users\\des\\Desktop\\classificacao\\planilha\\dados\\saida.csv";
+
+	public ArrayList<Planilha> abrir() {
+
+		return null;
+	}
+	public void salvar(ArrayList<Planilha> linhas) {
+		try {
+			bw = new BufferedWriter(new FileWriter(saida));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}	
+}

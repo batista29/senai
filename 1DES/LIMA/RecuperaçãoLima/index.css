@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-color: #d7f7f7;
+}
+
+.prt1 {
+    width: 118vh;
+    display: flex;
+    padding-left: 80vh;
+    padding-top: 7vh;
+}
+
+.tech {
+    height: 11vh;
+}
+
+.prt2 {
+    padding-left: 80vh;
+    width: 118vh;
+    height: 45vh;
+    padding-top: 2vh;
+}
+
+.quadrado {
+    padding-top: 10vh;
+    height: 27vh;
+    width: 42vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border: 0.1px solid rgb(218, 216, 216);
+}
+
+.number1 {
+    margin-top: -13vh;
+    margin-left: 3vh;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 100px;
+    border: 1.5px solid #44babc;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number1:hover {
+    background-color: #35797d;
+    color: white;
+    transition: 0.5s;
+}
+
+hr {
+    margin-left: -4vh;
+    width: 50vh;
+    color: black;
+}

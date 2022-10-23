@@ -1,0 +1,17 @@
+package controle;
+
+import java.util.ArrayList;
+
+import modelo.Usuario;
+
+public class UsuarioProcessa {
+	
+	public static ArrayList<Usuario> usuario = new ArrayList<>();
+	private static UsuarioDAO ud = new UsuarioDAO();
+	
+	public boolean checar() {
+		
+		return false;
+	}
+
+}

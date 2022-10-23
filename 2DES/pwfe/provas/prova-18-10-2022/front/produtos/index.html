@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="carregar()">
+    <header id="header">
+        <div class="esquerda">
+            <h3 class="info-esquerda">Home</h3>
+            <h3 class="info-esquerda">Produtos</h3>
+        </div>
+        <div class="direita">
+            <h3 class="info-direita">User Name</h3>
+            <div class="model">
+                <img src="" alt="" id="img" class="imgSup">
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <button onClick="adicionar()">Cadastrar</button>
+    </div>
+    <main id="corpo">
+        <div class="card model">
+            <img id="img" src="" alt="Ilustracao">
+            <div id="texto" class="texto">
+                <H3 id="id">ID:</H3>
+                <h3 id="ni">NI:</h3>
+                <h3 id="aquisicao">Aquisição:</h3>
+                <h3 id="denominacao">Denominação:</h3>
+                <h3 id="valor">Valor: $</h3>
+            </div>
+        </div>
+
+        <div class="fundomodal modal">
+            <div class="model">
+                <p>informações <button onClick="fecharModal()">x</button> </p>
+                <input id="inpNi" type="text" placeholder="ni">
+                <input id="inpAquisicao" type="text" placeholder="aquisição">
+                <input id="inpDenominacao" type="text" placeholder="Denominação">
+                <input id="inpValor" type="text" placeholder="Valor">
+                <input id="inpImg" type="text" placeholder="imagem">
+                <button onClick="confirmarCadastro()">enviar</button>
+            </div>
+        </div>
+</body>
+<script src="index.js"></script>
+</html>

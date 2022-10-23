@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inpt{
+    border: 1px solid black;
+    border-radius: 5%;
+    margin-top: 10vh;
+    height: 25vh;
+    width: 40vh;
+    margin-left: 87vh;
+    background-color: rgb(230, 248, 252);
+    text-align: center;
+}
+input{
+    margin-top: 3vh;
+    border-radius: 5%;
+    height: 3vh;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: rgb(230, 248, 252);
+}
+button{
+    margin-top: 2vh;
+    height: 4vh;
+    width: 6vh;
+    background-color: rgb(146, 223, 240);
+}

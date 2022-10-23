@@ -1,0 +1,9 @@
+package controle;
+
+import java.util.ArrayList;
+import modelo.Planilha;
+
+public class ProocessaPlanilha {
+	
+	static ArrayList<Planilha> linhas = new ArrayList<>();
+}

@@ -1,0 +1,24 @@
+body{
+    background-image: url(https://www.futbolemotion.com/imagescontenidos/lanzamientos/nike-cr7-chapter7/banner.jpg);
+}
+header{
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+}
+.roupas{
+    height: 27vh;
+    border: 5px solid rgb(7, 7, 31);
+}
+.container{
+    padding-top: 5VH;
+}
+.escada{
+    padding-top: 2vh;
+}
+.chuteiras{
+    padding-left: 17vh;
+}
+footer{
+    height: 70vh;
+    background-image: url(https://www.elhombre.com.br/wp-content/uploads/2018/07/ronaldo-1.jpg);
+}

@@ -1,0 +1,33 @@
+package controle;
+
+import java.util.ArrayList;
+
+import modelo.Usuario;
+
+public class UsuarioProcessa {
+	
+	public static ArrayList<Usuario> usuarios = new ArrayList<>();
+	private static UsuarioDAO ud = new UsuarioDAO();
+	
+	public void carregar() {
+		usuarios = ud.abrir();
+	}
+	
+	public boolean checarUsuario(String email) {
+		int retorno = -1;
+		for (int i = 0; i < usuarios.size(); i++) {
+			if(usuarios.get(i).getEmail() == email){
+				retorno = -1;
+			}
+		}
+		return retorno;
+		
+			}
+	public boolean checarSenha(int indice, String senha) {
+		return usuarios.get(indice).getSenha() == senha;
+	}
+	
+}
+		
+		
+	

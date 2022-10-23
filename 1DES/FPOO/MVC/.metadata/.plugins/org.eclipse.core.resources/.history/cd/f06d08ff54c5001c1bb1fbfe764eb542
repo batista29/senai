@@ -1,0 +1,11 @@
+package controle;
+//objeto de acesso a datas
+
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+
+public class DAO {
+
+	private BufferedWriter bw;
+	private BufferedReader br;
+}

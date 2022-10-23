@@ -1,0 +1,15 @@
+package visao;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Tela {
+
+	static Scanner scan = new Scanner(System.in);
+
+		public static void main(String[] args) throws IOException {
+			
+			System.out.println();
+		}
+	}
+

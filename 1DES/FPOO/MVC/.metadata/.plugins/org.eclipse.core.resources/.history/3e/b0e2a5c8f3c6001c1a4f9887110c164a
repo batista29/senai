@@ -1,0 +1,40 @@
+package visao;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TelaLogin extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+
+	private JPanel painel;
+	private JLabel rotulo1, rotulo2;
+	private JTextField Email, Senha;
+	private JButton login;
+
+	TelaLogin(){
+		setTitle("Tela de login");
+		setBounds(300,300,400,200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(null);
+		
+		painel = new JPanel();
+		setContentPane(painel);
+		rotulo1 = new JLabel("Email");
+		rotulo1 .setBounds(20,20,100,20);
+		rotulo2 = new JLabel("Email");
+		rotulo2 .setBounds(20,20,100,20);
+		Email = new JTextField();
+		Senha = new JTextField();
+		
+				
+	}
+
+	public static void Main(String[] args) {
+		TelaLogin tela = new TelaLogin();
+		tela.setVisible(true);
+	}
+}

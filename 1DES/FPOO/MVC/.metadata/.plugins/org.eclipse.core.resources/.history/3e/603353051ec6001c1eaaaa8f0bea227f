@@ -1,0 +1,11 @@
+package controle;
+
+import java.util.ArrayList;
+
+import modelo.Pessoas;
+
+public class ProcessaPessoa {
+	
+	private static ArrayList<Pessoas> linhas = new ArrayList<>();
+
+}

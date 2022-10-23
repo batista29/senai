@@ -1,0 +1,26 @@
+package modelo;
+
+import java.util.Calendar;
+
+public class Pessoas {
+	
+	private String name;
+	private int nasc;
+	
+	public Pessoas(String entrada) {
+		
+		Date date = new Date();
+		
+		Calendar atual = Calendar.getInstance();
+		int idade;
+		name = (entrada.split(";")[0]);
+		nasc = Integer.parseInt(entrada.split(";")[1]);
+		
+	
+	}
+	
+	public String salvarPessoa() {
+		return name + ;
+	}
+
+}

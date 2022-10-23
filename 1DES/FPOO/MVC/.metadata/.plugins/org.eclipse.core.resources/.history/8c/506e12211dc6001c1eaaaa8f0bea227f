@@ -1,0 +1,28 @@
+package controle;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import modelo.Pessoas;
+
+public class DAO {
+	
+	private BufferedWriter bw;
+	private BufferedReader br;
+	
+	private String entrada = "C:\\Users\\des\\Desktop\\classificacao\\pessoas\\dados\\pessoas.csv";
+	private String saida = "C:\\Users\\des\\Desktop\\classificacao\\pessoas\\dados\\saida.csv";
+	
+	public ArrayList<Pessoas> abrir() throws IOException {
+		
+		ArrayList<Pessoas> linhas = new ArrayList<>();
+		Pessoas p;
+		
+		
+		
+		return linhas;
+		
+	}
+}

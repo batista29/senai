@@ -1,0 +1,17 @@
+package modelo;
+
+public class Alunos {
+	
+	private String name;
+	private int v1;
+	private int v2;
+	private int v3;
+	
+	public Alunos(String entrada) {
+	
+		v1 = Integer.parseInt(entrada.split(";")[0]);
+		v2 = Integer.parseInt(entrada.split(";")[1]);
+		v3 = Integer.parseInt(entrada.split(";")[2]);
+	}
+
+}

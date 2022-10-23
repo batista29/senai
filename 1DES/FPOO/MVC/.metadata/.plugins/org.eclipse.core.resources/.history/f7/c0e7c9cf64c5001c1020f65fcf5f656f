@@ -1,0 +1,26 @@
+package controle;
+
+import java.util.ArrayList;
+import modelo.Planilha;
+
+public class ProocessaPlanilha {
+
+	private static DAO dao = new DAO();
+
+	private static ArrayList<Planilha> linhas = new ArrayList<>();
+
+	public static void carregar() {
+		linhas  = dao.abrir();
+	}
+	public static void saida() {
+		int opcao;
+		switch(opcao) {
+		case 1:
+			
+			dao.salvarSoma();
+			
+			break;
+	}
+
+}
+}

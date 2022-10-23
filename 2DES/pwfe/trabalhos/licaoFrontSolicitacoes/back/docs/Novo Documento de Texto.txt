@@ -1,0 +1,4 @@
+listar departamentos
+excluir departamentos
+listar e atualizar produtos
+cadastrar solicitação

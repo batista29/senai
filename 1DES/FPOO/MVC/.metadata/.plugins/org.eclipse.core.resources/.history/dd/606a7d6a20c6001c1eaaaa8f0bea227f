@@ -1,0 +1,15 @@
+package modelo;
+
+import java.util.Date;
+
+public class Pessoas {
+	
+	private String name;
+	private String nasc;
+	
+	public Pessoas(String entrada) {
+		
+		
+	}
+
+}

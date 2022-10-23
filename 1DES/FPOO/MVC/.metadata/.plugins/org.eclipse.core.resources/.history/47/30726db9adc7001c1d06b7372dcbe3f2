@@ -1,0 +1,11 @@
+package visao;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import controle.ProcessaAluno;
+
+public class TelaNotas extends JFrame implements ActionListener{
+
+}

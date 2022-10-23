@@ -1,0 +1,26 @@
+package controle;
+
+import java.util.ArrayList;
+
+import modelo.Usuario;
+
+public class UsuarioProcessa {
+	
+	public static ArrayList<Usuario> usuarios = new ArrayList<>();
+	private static UsuarioDAO ud = new UsuarioDAO();
+	
+	public void carregar() {
+		usuarios = ud.abrir();
+	}
+	
+	public boolean checarUsuario(String email) {
+		boolean retorno = false
+		for (Usuario u : usuarios) {
+			if(u.getEmail() == email ) {
+				retorno = true;
+			}
+		}
+		return retorno;
+	}
+
+}

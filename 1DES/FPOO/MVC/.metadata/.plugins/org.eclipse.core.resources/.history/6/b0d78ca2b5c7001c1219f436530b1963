@@ -1,0 +1,52 @@
+package visao;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TesteConsole extends JFrame{
+
+	private static final long serialVersionUID = 1L;
+	// Atributos da tela
+	private JPanel painel;
+	private JLabel rotulo1, rotulo2;
+	private JTextField name, nasc;
+	private JButton carregar;
+	
+	TesteConsole() {
+		
+		setTitle("Tela de Notas");
+		setBounds(600, 200, 600, 250);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		painel = new JPanel(); //Painel de elementos
+		setContentPane(painel); //Configua o painel
+		setLayout(null);
+		
+		rotulo1 = new JLabel("  Coloque o nome da pessoa:");
+		rotulo1.setBounds(20, 20, 230, 20);
+		name = new JTextField();
+		name.setBounds(200, 20, 200, 30);
+		
+		rotulo2 = new JLabel("Coloque a data de nascimento:");
+		rotulo2.setBounds(20, 60, 230, 20);
+		nasc = new JTextField();
+		nasc.setBounds(200, 60, 200, 30);
+		
+		carregar = new JButton("Carregar Idade");
+		carregar.setBounds(120, 120, 230, 30);
+		
+		painel.add(rotulo1);
+		painel.add(name);
+		painel.add(rotulo2);
+		painel.add(nasc);
+		painel.add(carregar);
+	}
+	
+	public static void main(String[] args) {
+		TesteConsole tela = new TesteConsole();
+		tela.setVisible(true);
+	}
+
+}

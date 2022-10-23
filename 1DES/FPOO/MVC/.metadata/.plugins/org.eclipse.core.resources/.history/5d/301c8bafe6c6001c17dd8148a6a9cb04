@@ -1,0 +1,10 @@
+package controle;
+
+import java.io.BufferedReader;
+
+public class UsuarioDAO {
+	
+	BufferedReader br;
+	String path = "C:\\Users\\des\\Desktop\\classificacao\\login\\Dados\\usuarios.csv";
+
+}

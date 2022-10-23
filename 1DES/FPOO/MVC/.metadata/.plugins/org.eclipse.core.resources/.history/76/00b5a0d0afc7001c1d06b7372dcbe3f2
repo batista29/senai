@@ -1,0 +1,19 @@
+package visao;
+
+import java.awt.event.ActionListener;
+import javax.swing.JFrame;
+
+import controle.ProcessaAluno;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TesteConsole extends JFrame implements ActionListener {
+	
+	
+
+}

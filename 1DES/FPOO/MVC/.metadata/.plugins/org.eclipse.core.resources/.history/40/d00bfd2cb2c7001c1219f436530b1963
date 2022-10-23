@@ -1,0 +1,18 @@
+package visao;
+
+import java.io.IOException;
+import java.util.Scanner;
+import controle.ProcessaAluno;
+
+public class Tela {
+
+	static Scanner scan = new Scanner(System.in);
+
+	public static void Main(String[] args) throws IOException {
+		
+		ProcessaAluno.carregar();
+		ProcessaAluno.saida();
+		System.out.println("Médias calculadas com sucesso");
+
+	}
+}

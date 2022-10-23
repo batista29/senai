@@ -1,0 +1,10 @@
+package modelo;
+
+public class Alunos {
+	
+	private String name;
+	private int v1;
+	private int v2;
+	private int v3;
+
+}

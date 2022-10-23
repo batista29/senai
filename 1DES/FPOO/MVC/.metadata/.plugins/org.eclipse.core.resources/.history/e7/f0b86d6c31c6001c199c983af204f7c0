@@ -1,0 +1,10 @@
+package visao;
+
+import java.util.Random;
+
+public class Menu {
+	
+	Random rand = new Random();
+	
+
+}

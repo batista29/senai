@@ -1,0 +1,9 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Tela {
+	
+	static Scanner scan = new Scanner(System.in);
+
+}

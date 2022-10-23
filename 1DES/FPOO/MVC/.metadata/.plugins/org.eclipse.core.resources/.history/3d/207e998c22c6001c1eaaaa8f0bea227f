@@ -1,0 +1,19 @@
+package modelo;
+
+import java.util.Date;
+
+public class Pessoas {
+	
+	private String name;
+	private int nasc;
+	
+	public Pessoas(String entrada) {
+		
+		Date date = new Date();
+		
+		name = (entrada.split(";")[0]);
+		nasc = Integer.parseInt(entrada.split(";")[1]);
+	
+	}
+
+}
