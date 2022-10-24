@@ -1,9 +1,9 @@
 const Cliente = require('../models/cliente');
 const con = require('../dao/dbclientes');
 const multer = require('multer');
-const upload = multer().single('foto')
+const upload = multer().single('avatar')
 
-const cadastrarCliente = (req, res) => {
+const cadastrarCliente = async (req, res) => {
     upload(req, res, (err) => {
         if (err)
             res.status(500).json({ error: 1, payload: err }).end();

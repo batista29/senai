@@ -12,8 +12,20 @@
 <body onLoad="carregar()">
     <header>
         <h3>Usuários</h3>
-        <button onClick="cadastrar()">Novo</button>
     </header>
+    <div class="modal">
+        <form class="form" action="http://localhost:5000/clientes" method="post" enctype="multipart/form-data"
+            id="form">
+            <H4>CRIAR NOVO USUARIO</h4>
+            <input type="text" id="login" name="login" placeholder="login" required />
+            <input type="text" id="nome" name="nome" placeholder="nome" required />
+            <input type="text" id="nascimento" name="nascimento" placeholder="nascimento" required />
+            <input type="text" id="tell" name="telefone" placeholder="tell" required />
+            <input type="file" name="avatar" id="fileUpdate" onchange="toBase64update()"
+                accept="image/jpeg, image/png" />
+            <button type="submit" id="submit">Criar</button>
+        </form>
+    </div>
     <div id="corpo">
         <div class="infos card model">
             <div class="info">
@@ -30,5 +42,4 @@
     </div>
 </body>
 <script src="index.js"></script>
-
 </html>

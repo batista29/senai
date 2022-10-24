@@ -16,7 +16,7 @@ const toDel = (dados)=>{
 
 const toAscii = (dados)=>{
     dados.forEach(d => {
-        if(d.avatar != null) d.foto = d.avatar.toString('ascii');
+        if(d.avatar != null) d.avatar = d.avatar.toString('ascii');
     });
     return dados;
 }
