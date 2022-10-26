@@ -1,24 +1,52 @@
-import * as React from 'react';
-import { View } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { RadioButton } from 'react-native-paper';
+import * as React from 'react';
 
-const MyComponent = () => {
-  const [checked, setChecked] = React.useState('first');
+export default function quiz2(navi) {
+
+  let pontos = navi.route.params;
+
+  const [checked, setChecked] = React.useState('');
+
+  const dados =
+  {
+    "pergunta": "Quantas copas do mundo portugal tem???",
+    "respostas": [
+      "0 Copas", "Nenhuma copa", "Zero Zero", "Nothing"
+    ],
+    "resposta": "first"
+  }
 
   return (
     <View>
-      <RadioButton
-        value="first"
-        status={ checked === 'first' ? 'checked' : 'unchecked' }
-        onPress={() => setChecked('first')}
-      />
-      <RadioButton
-        value="second"
-        status={ checked === 'second' ? 'checked' : 'unchecked' }
-        onPress={() => setChecked('second')}
-      />
+      <Text>Quantas copas do mundo portugal tem???</Text>
+      <View>
+        {
+          dados.respostas.map((resp, indice) => {
+            return (
+
+              <View>
+                <br></br>
+                <Text>{resp}</Text>
+                <RadioButton
+                  value="first"
+                  status={checked === indice ? 'checked' : 'unchecked'}
+                  onPress={() => setChecked(indice)}
+                />
+              </View>
+            )
+          })
+        }
+      </View>
+      <TouchableOpacity onPress={() => {
+        if (checked == 2) {
+          pontos++
+        }
+        navi.navigation.navigate("quiz5", pontos)
+      }}
+      >
+        <Text>Proxima pergunta</Text>
+      </TouchableOpacity>
     </View>
   );
 };
-
-export default MyComponent;

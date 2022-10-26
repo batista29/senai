@@ -6,13 +6,16 @@ const dados =
 {
     "pergunta": "qual a tradução de apple",
     "respostas": [
-        "maça", "banana"
+        "maça", "banana", "Fernando", "Juzias"
     ],
     "resposta": "first"
 }
 
-const MyComponent = () => {
-    const [checked, setChecked] = React.useState('');
+
+var pontos = 0
+
+const MyComponent = ({ navigation }) => {
+    const [checked, setChecked] = React.useState('first');
 
     return (
         <View>
@@ -20,11 +23,11 @@ const MyComponent = () => {
                 {
                     dados.respostas.map((resp, indice) => {
                         return (
-
                             <View>
+                                <br></br>
                                 <Text>{resp}</Text>
                                 <RadioButton
-                                    value="first"
+                                    value={resp}
                                     status={checked === indice ? 'checked' : 'unchecked'}
                                     onPress={() => setChecked(indice)}
                                 />
@@ -33,7 +36,13 @@ const MyComponent = () => {
                     })
                 }
             </View>
-            <TouchableOpacity onPress={() => { navigation.navigate("quiz2") }}>
+            <TouchableOpacity onPress={() => {
+                if (checked == 1) {
+                    pontos++
+                }
+                navigation.navigate("quiz2", pontos) 
+            }}>
+
                 <Text>Proxima pergunta</Text>
             </TouchableOpacity>
         </View>

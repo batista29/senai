@@ -7,6 +7,7 @@ import quiz2 from './src/pages/quiz2.js';
 import quiz3 from './src/pages/quiz3.js';
 import quiz4 from './src/pages/quiz4.js';
 import quiz5 from './src/pages/quiz5.js';
+import pontos from './src/home/index.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ export default function App() {
         <Stack.Screen name="quiz3" component={quiz3} />
         <Stack.Screen name="quiz4" component={quiz4} />
         <Stack.Screen name="quiz5" component={quiz5} />
+        <Stack.Screen name="pontos" component={pontos} />
       </Stack.Navigator>
     </NavigationContainer>
   );
