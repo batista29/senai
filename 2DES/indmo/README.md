@@ -1,1 +1,0 @@
-Interfaces para dispositivos mobile
