@@ -19,29 +19,28 @@ header {
     height: 50vh;
 }
 
-.card{
+.card {
     display: flex;
     text-align: center;
     justify-content: space-between;
     height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(255, 255, 255, 0)
-    );
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
 }
 
-header > div > span{
+header>div>span {
     margin-top: 5vh;
     font-size: 2.3vh;
 }
 
-.card-left{
+.card-left {
     margin-left: 15vh;
 }
 
-.card-right{
+.card-right {
     margin-right: 15vh;
 }
 
-.principal{
+.principal {
     display: flex;
     height: 100%;
     width: 100%;
@@ -50,12 +49,14 @@ header > div > span{
     justify-content: center;
 }
 
-.part1{
-    margin-top: -10vh;    
+.part1 {
+    margin-top: -10vh;
     height: 240px;
 }
 
-.part1,.part2, .part3, .part4, .part5, .part6{
+.part1,
+.part22,
+.part3 {
     width: 35vw;
     margin-bottom: 3vh;
     background-color: #fff;
@@ -63,43 +64,131 @@ header > div > span{
     border: 1px solid rgba(105, 90, 90, 0.185);
 }
 
-.Bookmark-img{
+.Bookmark-img {
     height: 5vh;
     margin-right: 5vh;
 }
 
-.Bookmark-word{
+.Bookmark-word {
     margin-right: 1vh;
 }
 
-.Bookmark{
+.Bookmark {
     display: flex;
     font-size: 2vh;
-    color: rgb(65, 65, 65);
+    color: hsl(177, 39%, 40%);
     border-radius: 20px 20px;
-    background-color: rgba(128, 128, 128, 0.3);
+    background-color: rgba(156, 156, 156, 0.1);
     width: 20vh;
     height: 5vh;
     justify-content: space-evenly;
     align-items: center;
     margin-right: 1vh;
+    border: 1px solid rgba(238, 238, 238, 0);
 }
 
-.back-this{
+.back-this, .select-reward{
     width: 20vh;
     height: 5vh;
     border-radius: 20px 20px;
     margin-left: 1vh;
     color: white;
-    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(177, 39%, 40%);
+    background-color: hsl(177, 39%, 40%);
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 7vh;
 }
 
-.part1 > h2{
+.part1>h2 {
     margin-top: 2vh;
+}
+
+.part2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 15vh;
+}
+
+.part2-span1 {
+    border-right: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+
+.part2-span3 {
+    border-left: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.part2-span1,
+.part2-span2,
+.part2-span3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.carr {
+    height: 13px;
+    width: 570px;
+    margin-left: 4vh;
+    border-radius: 20px 20px;
+    background-color: rgba(156, 156, 156, 0.15);
+}
+
+.carregando {
+    width: 480px;
+    height: 13px;
+    border-radius: 20px 20px;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.part22 {
+    height: 20vh;
+}
+
+.part4,
+.part5,
+.part6 {
+    width: 30vw;
+    margin-bottom: 3vh;
+    background-color: #fff;
+    border-radius: 20px 20px;
+    border: 1px solid rgba(105, 90, 90, 0.185);
+}
+
+.part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.part3>p,
+.part4>p,
+.part5>p,
+.part6>p {
+    color: gray;
+}
+
+.part4 {
+    margin-top: 3vh;
+}
+
+.bamboo, .select-row{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bamboo > h2{
+    font-size: 2vh;
+}
+
+.bamboo > h3{
+    margin-left: 17vh;
+    font-size: 1.8vh;
+    color:hsl(176, 50%, 47%);
 }

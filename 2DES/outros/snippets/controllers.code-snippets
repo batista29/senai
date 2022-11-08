@@ -1,0 +1,105 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"ControllersCre": {
+		"scope": "javascript, typescript",
+		"prefix": "createController",
+		//prefix é oq vc vai digitar para ele aparecer
+		"body": [
+			"const create = (req, res) => {",
+			"    con.query($1.create(req.body), (err, result)=>{",
+			"        if (err == null)",
+			"            res.status(201).end();",
+			"        else",
+			"             if (err.sqlState == 23000)",
+			"                 res.status(406).json(err).end();",
+			"        else",
+			"          res.status(500).json(err).end();",
+			"   });",
+			"}",
+		],
+		"description": "Criacao um create"
+	},
+	"ControllersDel": {
+		"scope": "javascript, typescript",
+		"prefix": "deleteController",
+		//prefix é oq vc vai digitar para ele aparecer
+		"body": [
+			"const del = (req, res) => {",
+			"    con.query($1.del(req.body), (err, result)=>{",
+			"        if (err == null)",
+			"            if (result.affectedRows > 0)",
+			"                res.status(204).end();",
+			"            else",
+			"               res.status(404).json(err).end();",
+			"        else",
+			"          res.status(400).json(err).end();",
+			"   });",
+			"}",
+		],
+		"description": "Criacao um delete"
+	},
+	"ControllersRead": {
+		"scope": "javascript, typescript",
+		"prefix": "readController",
+		//prefix é oq vc vai digitar para ele aparecer
+		"body": [
+			"const readAll = (req, res) => {",
+			"    con.query($1.readAll(), (err, result)=>{",
+			"        if (err == null)",
+			"            res.status(204).end();",
+			"        else",
+			"          res.status(500).json(err).end();",
+			"   });",
+			"}",
+		],
+		"description": "Criacao um read"
+	},
+"ControllersUpdate": {
+	"scope": "javascript, typescript",
+	"prefix": "updateController",
+	//prefix é oq vc vai digitar para ele aparecer
+	"body": [
+		"const update = (req, res) => {",
+		"    con.query($1.readAll(), (err, result)=>{",
+		"        if (err == null)",
+		"            if (result.affectedRows > 0)",
+		"                res.status(200).end();",
+		"            else",
+		"               res.status(404).end();",
+		"        else",
+		"          res.status(500).json(err).end();",
+		"   });",
+		"}",
+	],
+	"description": "Criacao um read"
+},
+"moduleExports": {
+	"scope": "javascript, typescript",
+	"prefix": "moduleexports",
+	//prefix é oq vc vai digitar para ele aparecer
+	"body": [
+		"module.exports = {",
+		"    create,",
+		"    readAll,",
+		"    update,",
+		"    del,",
+		"}",
+	],
+	"description": "Criacao um module.exports"
+},
+}
