@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="carregar()">
+    <header>
+        <H2>CANTINA DA DONA BETH</H2>
+    </header>
+    <main>
+        <div id="corpo">
+            <div class="inputs">
+                <div class="botao">
+                    <h4>DIGITE O ID DO SALGADO DESEJA EXCLUIR</h4>
+                    <input id="idDeletar" placeholder="DIGITE AQUI O ID" type="number">
+                    <BR></BR>
+                    <button onclick="deletar()">Apagar</button>
+                    <button> <a href="http://127.0.0.1:5500/cadastrar/index.html">cadastrar</a></button>
+              
+                    </div>
+            </div>
+            <div class="card model">
+                <div id="infoSalgados">
+                    <h3 id="id">ID: </h3>
+                    <h3 id="nome">Nome: </h3>
+                    <h3 id="descricao">Descrição: </h3>
+                </div>
+                <img id="img" src="" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>
