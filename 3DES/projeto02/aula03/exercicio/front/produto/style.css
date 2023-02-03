@@ -11,23 +11,3 @@ body {
     display: flex;
     justify-content: center;
 }
-
-.model {
-    display: hidden;
-}
-
-input{
-    height: 2.5vh;
-}
-
-button{
-    height: 2.5vh;
-    width: 7vh;
-}
-
-thead,
-tr,
-th,
-table {
-    border: 1px solid white
-}

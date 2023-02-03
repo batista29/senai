@@ -20,4 +20,16 @@ router.post('/vendedor', Vendedor.create)
 router.get('/vendedor', Vendedor.read)
 router.get('/vendedor/:id', Vendedor.readOne)
 
+const Vendas = require('../controller/vendas')
+
+router.post('/vendas', Vendas.create)
+router.get('/vendas', Vendas.read)
+router.get('/vendas/:id', Vendas.readOne)
+
+const Detalhes = require('../controller/detalhes')
+
+router.post('/detalhes', Detalhes.create)
+router.get('/detalhes', Detalhes.read)
+router.get('/detalhes/:id', Detalhes.readOne)
+
 module.exports = router;
