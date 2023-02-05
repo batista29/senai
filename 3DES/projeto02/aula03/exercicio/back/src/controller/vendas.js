@@ -21,6 +21,16 @@ const readOne = async (req, res) => {
         where: {
             id: Number(req.params.id)
         },
+        select: {
+            id: true,
+            data: true,
+            Detalhe: {
+                select: {
+                    id_prod: true,
+                    quantidade:true
+                }
+            }
+        }
     });
     res.status(200).json(vendas).end();
 }
