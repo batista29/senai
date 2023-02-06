@@ -27,7 +27,11 @@ const readOne = async (req, res) => {
             Detalhe: {
                 select: {
                     id_prod: true,
+<<<<<<< HEAD
                     quantidade: true
+=======
+                    quantidade:true
+>>>>>>> ae0695254bb54a9a214b8055107b13a1fb560ab9
                 }
             }
         }
