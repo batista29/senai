@@ -6,7 +6,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: rgb(62, 57, 57);
+    background-color: lightblue;
     color: white;
     display: flex;
     justify-content: center;
@@ -16,13 +16,13 @@ body {
     display: hidden;
 }
 
-input{
+input {
     height: 2.5vh;
 }
 
-button{
-    height: 2.5vh;
-    width: 7vh;
+button {
+    height: 3.8vh;
+    width: 10vh;
 }
 
 thead,
@@ -30,4 +30,24 @@ tr,
 th,
 table {
     border: 1px solid white
+}
+
+.main {
+    background-color: rgb(0, 58, 77);
+    font-size: 2vh;
+}
+
+.inputs{
+    height: 30vh;
+    width: 30vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+}
+
+.inputs>input, button{
+    height: 3vh;
+    width: 20vh;
 }

@@ -9,15 +9,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onLoad="carregar()">
+<body onload="carregar()">
     <table>
         <thead class="main">
             <tr class="lista model">
                 <th id="nome_prod"></th>
                 <th id="valor"></th>
+                <th id="setor"></th>
             </tr>
         </thead>
+    </table>
+
+    <div class="cadastro">
+        <h2>Cadastro</h2>
+        <input id="nome" type="text">
+        <input id="valor_prod" type="text">
+        <input id="setorId" type="text">
+        <button onclick="enviar()">enviar informações</button>
+    </div>
+    <div class="buscar">
+        <h2>digite o id do produto que busca</h2>
+        <input id="id_busca" type="number">
+        <button onclick="burcarProd()">buscar produto</button>
+
+        <h3 id="nome_busca"></h3>
+        <h3 id="valor_busca"></h3>
+        <h3 id="setor_busca"></h3>
+    </div>
 </body>
 <script src="index.js"></script>
-
 </html>

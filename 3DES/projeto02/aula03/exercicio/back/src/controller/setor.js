@@ -18,7 +18,7 @@ const read = async (req, res) => {
             produtos: {
                 select: {
                     nome: true,
-                    valor:true
+                    valor: true
                 }
             }
         }
@@ -32,6 +32,16 @@ const readOne = async (req, res) => {
         where: {
             id: Number(req.params.id)
         },
+        select: {
+            nome: true,
+            comissao: true,
+            produtos: {
+                select: {
+                    nome: true,
+                    valor: true
+                }
+            }
+        }
     });
     res.status(200).json(setor).end();
 }

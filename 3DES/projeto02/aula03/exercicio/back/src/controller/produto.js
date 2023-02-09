@@ -11,22 +11,33 @@ const create = async (req, res) => {
 }
 
 const read = async (req, res) => {
-    let produto = await prisma.produto.findMany();
+    let produto = await prisma.produto.findMany({
+        select: {
+            nome: true,
+            valor: true,
+            Setor: {
+                select: {
+                    nome: true
+                }
+            }
+        }
+    }
+    );
 
     res.status(200).json(produto).end();
 }
 
 const readOne = async (req, res) => {
-    let produto = await prisma.produto.findUnique({
+    const produto = await prisma.produto.findUnique({
         where: {
             id: Number(req.params.id)
         },
         select: {
-            nome:true,
-            valor:true,
+            nome: true,
+            valor: true,
             Setor: {
-                select:{
-                    nome:true
+                select: {
+                    nome: true
                 }
             }
         }
