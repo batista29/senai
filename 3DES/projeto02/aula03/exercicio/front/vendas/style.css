@@ -1,0 +1,13 @@
+body{
+    background-color: lightblue;
+}
+
+.main{
+    height: max-content;
+    width: fit-content;
+    border: 2px solid black;
+}
+
+.lista{
+    border-bottom: 1px solid black;
+}

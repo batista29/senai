@@ -13,12 +13,23 @@ const create = async (req, res) => {
 const read = async (req, res) => {
     let vendas = await prisma.vendas.findMany({
         select: {
-            id: true,
             data: true,
+            Vendedor:{
+                select:{
+                    nome:true
+                }
+            },
             Detalhe: {
                 select: {
                     id_prod: true,
-                    quantidade: true
+                    quantidade: true,
+                    Produto:{
+                        select:{
+                            nome:true,
+                            valor:true,
+                            Setor:true
+                        }
+                    }
                 }
             }
         }
@@ -33,12 +44,23 @@ const readOne = async (req, res) => {
             id: Number(req.params.id)
         },
         select: {
-            id: true,
             data: true,
+            Vendedor:{
+                select:{
+                    nome:true
+                }
+            },
             Detalhe: {
                 select: {
                     id_prod: true,
-                    quantidade: true
+                    quantidade: true,
+                    Produto:{
+                        select:{
+                            nome:true,
+                            valor:true,
+                            Setor:true
+                        }
+                    }
                 }
             }
         }

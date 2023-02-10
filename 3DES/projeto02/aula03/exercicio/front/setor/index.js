@@ -17,7 +17,6 @@ function carregar() {
                 tabela.querySelector('#comissao').innerHTML = 'Comissão (%): ' + e.comissao
                 
                 e.produtos.forEach(dados => {
-                    console.log(dados.nome)
                     tabela.querySelector('#nome_prod').innerHTML = 'Produto: ' + dados.nome
                     tabela.querySelector('#valor').innerHTML = 'Valor: ' + dados.valor
                     tabela.querySelector('#comissaoTotal').innerHTML = 'Comissão: ' + dados.valor * (e.comissao / 100)
@@ -35,8 +34,6 @@ function enviar() {
         nome: inp1,
         comissao: Number(inp2)
     }
-
-    console.log(dados)
 
     const options = {
         method: 'POST',

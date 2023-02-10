@@ -16,6 +16,11 @@ const read = async (req, res) => {
             id: true,
             id_prod: true,
             id_venda: true,
+            Vendas: {
+                select: {
+                    Vendedor: true
+                }
+            },
             Produto: {
                 select: {
                     nome: true
@@ -36,6 +41,11 @@ const readOne = async (req, res) => {
             id: true,
             id_prod: true,
             id_venda: true,
+            Vendas: {
+                select: {
+                    Vendedor: true
+                }
+            },
             Produto: {
                 select: {
                     nome: true
