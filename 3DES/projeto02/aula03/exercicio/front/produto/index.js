@@ -50,7 +50,7 @@ function enviar() {
 
 }
 
-function burcarProd() {
+function buscarProd() {
     let id_busca = document.querySelector("#id_busca").value
 
     const options = { method: 'GET' };
