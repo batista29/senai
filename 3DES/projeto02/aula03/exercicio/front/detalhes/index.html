@@ -20,22 +20,23 @@
         </div>
     </div>
 
-    <div class="inputs">
-        <input id="inp" type="number">
-        <input id="inp2" type="number">
-        <input id="inp3" type="number">
-        <button onclick="enviar()">++++</button>
-    </div>
+    <div class="down">
+        <div class="inputs">
+            <h3></h3>
+            <input id="inp" type="number" placeholder="ID do produto">
+            <input id="inp2" type="number" placeholder="ID da venda">
+            <input id="inp3" type="number" placeholder="Quantidade">
+            <button onclick="enviar()">++++</button>
+        </div>
 
-    <div class="buscar">
-        <h2>digite o id do setor que deseja buscar</h2>
-        <input id="id_busca" type="number">
-        <button onclick="buscar()">buscar</button>
-        <span class="infos model">
-            <h2 id="produtoBusca"></h2>
-            <h2 id="vendedorBusca"></h2>
-            <h2 id="salarioBusca"></h2>
-        </span>
+        <div class="buscar">
+            <h2>digite o id do setor que deseja buscar</h2>
+            <input id="id_busca" type="number">
+            <button onclick="buscar()">buscar</button>
+                <h4 id="produtoBusca"></h4>
+                <h4 id="vendedorBusca"></h4>
+                <h4 id="salarioBusca"></h4>
+        </div>
     </div>
 
 </body>

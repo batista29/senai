@@ -10,15 +10,17 @@ function carregar() {
         .then(response => response.json())
         .then(res => {
             res.forEach(e => {
+                var date = new Date(e.data)
+                var dataFormatadata = date.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+
                 let tabela = exe.cloneNode(true)
                 tabela.classList.remove("model")
 
-                tabela.querySelector('#data').innerHTML = 'Data: ' + e.data
-                tabela.querySelector('#vendedor').innerHTML = 'Vendedor (%): ' + e.Vendedor.nome
+                tabela.querySelector('#data').innerHTML = 'Data: ' + dataFormatadata
+                tabela.querySelector('#vendedor').innerHTML = 'Vendedor: ' + e.Vendedor.nome
 
                 e.Detalhe.forEach(dados => {
                     tabela.querySelector('#quantidade_prod').innerHTML = 'Quantidade: ' + dados.quantidade
-                    console.log(dados.Produto.nome)
                     tabela.querySelector('#nome_prod').innerHTML = 'Produto: ' + dados.Produto.nome
                     tabela.querySelector('#valor').innerHTML = 'Valor: ' + dados.Produto.valor
                 })

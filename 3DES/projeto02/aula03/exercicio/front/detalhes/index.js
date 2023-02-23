@@ -24,6 +24,8 @@ function carregar() {
 
 function buscar() {
     let id_busca = document.querySelector('#id_busca').value
+    const pricipal = document.querySelector('.buscar')
+    const info = document.querySelector('.infos')
 
     const options = { method: 'GET' };
 
@@ -31,7 +33,7 @@ function buscar() {
         .then(response => response.json())
         .then(res => {
 
-            document.querySelector('#produtoBusca').innerHTML = 'Data: ' + res.Produto.nome
+            document.querySelector('#produtoBusca').innerHTML = 'Produto: ' + res.Produto.nome
             document.querySelector('#salarioBusca').innerHTML = 'Salario: ' + res.Vendas.Vendedor.salario
             document.querySelector('#vendedorBusca').innerHTML = 'Vendedor: ' + res.Vendas.Vendedor.nome
         })

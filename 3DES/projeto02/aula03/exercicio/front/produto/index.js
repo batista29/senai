@@ -58,7 +58,6 @@ function buscarProd() {
     fetch(`http://localhost:3000/produto/${id_busca}`, options)
         .then(res => res.json())
         .then(response => {
-            console.log(response)
             document.querySelector("#nome_busca").innerHTML = response.nome
             document.querySelector("#valor_busca").innerHTML = response.valor
             document.querySelector("#setor_busca").innerHTML = response.Setor.nome

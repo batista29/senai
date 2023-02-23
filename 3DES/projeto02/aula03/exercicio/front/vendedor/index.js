@@ -15,7 +15,7 @@ function carregar() {
                 tabela.classList.remove("model")
                 tabela.querySelector('#nome').innerHTML = 'Vendedor: ' + e.nome
                 tabela.querySelector('#salario').innerHTML = 'Sálario: ' + e.salario
-                tabela.querySelector('#setor').innerHTML = 'Quantidade: ' + e.Setor.nome
+                tabela.querySelector('#setor').innerHTML = 'Setor: ' + e.Setor.nome
 
                 main.appendChild(tabela)
             });
@@ -51,7 +51,8 @@ function enviar() {
 }
 
 function buscar() {
-
+    const pricipal = document.querySelector('.buscar')
+    const info = document.querySelector('.infos')
     let id_busca = document.querySelector('#id_busca').value
 
     const options = { method: 'GET' };
@@ -59,10 +60,11 @@ function buscar() {
     fetch(`http://localhost:3000/vendedor/${id_busca}`, options)
         .then(response => response.json())
         .then(res => {
-
+            let infoGrid = info.cloneNode(true)
+            infoGrid.classList.remove("model")
             document.querySelector('#nomeBusca').innerHTML = 'nome: ' + res.nome
             document.querySelector('#salarioBusca').innerHTML = 'Salario: ' + res.salario
             document.querySelector('#setorBusca').innerHTML = 'Setor: ' + res.Setor.nome
-
+            pricipal.appendChild(infoGrid)
         })
 }
