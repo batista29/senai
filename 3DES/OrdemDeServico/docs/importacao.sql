@@ -19,4 +19,4 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
-update os SET encerramento = NULL WHERE encerramento = '0000-00-00 00:00:00.000'
+update os SET encerramento = NULL WHERE encerramento = '0000-00-00 00:00:00.000';
