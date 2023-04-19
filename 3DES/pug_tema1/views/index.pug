@@ -1,0 +1,33 @@
+head
+  meta(charset='utf-8')
+  title Paciente
+  script(src="app.js")
+body(onload=`armazenaPaciente()`)
+ main
+    each armazenaPaciente in paciente
+        - let imc = paciente[0].peso/(paciente[0].altura*paciente[0].altura)
+          div
+            if (imc < 18.5)
+              p Abaixo do peso 
+              p ID: #{pacientes.id}
+              p Nome: #{paciente[0].nome_completo}
+              p Nascimento: #{paciente[0].nascimento}
+              p Peso: #{paciente[0].peso} kg
+              p Altura: #{paciente[0].altura}
+              p IMC: #{imc}
+                if (imc >= 18.5 && imc < 24.99)
+                    p Peso normal
+                    p ID: #{paciente[0].id}
+                    p Nome: #{paciente[0].nome_completo}
+                    p Nascimento: #{paciente[0].nascimento}
+                    p Peso: #{paciente[0].peso} kg
+                    p Altura: #{paciente[0].altura}
+                    p IMC: #{imc}
+                      if (imc >= 25 && imc < 29.99)
+                        p Acima do peso normal
+                        p ID: #{paciente[0].id}
+                        p Nome: #{paciente[0].nome_completo}
+                        p Nascimento: #{paciente[0].nascimento}
+                        p Peso: #{paciente[0].peso} kg
+                        p Altura: #{paciente[0].altura}
+                        p IMC: #{imc}
