@@ -19,10 +19,14 @@ const criar = async (req, res) => {
         peso: parseFloat(req.body.peso),
         altura: parseFloat(req.body.altura),
     }
+    let pacinte = await prisma.paciente.create({
+        data: info
+    })
 
     res.redirect('/')
 }
 
 module.exports = {
-    read
+    read,
+    criar
 }

@@ -5,29 +5,40 @@ head
 body(onload=`armazenaPaciente()`)
  main
     each armazenaPaciente in paciente
-        - let imc = paciente[0].peso/(paciente[0].altura*paciente[0].altura)
+        - let imc = armazenaPaciente.peso/(armazenaPaciente.altura*armazenaPaciente.altura)
+        - let miliSec = Date.parse(armazenaPaciente.nascimento)
+        - let idade = Math.floor((Date.now() - miliSec) / (365.25 * 24 * 60 * 60 * 1000))
           div
+          p #{age}
             if (imc < 18.5)
               p Abaixo do peso 
-              p ID: #{pacientes.id}
-              p Nome: #{paciente[0].nome_completo}
-              p Nascimento: #{paciente[0].nascimento}
-              p Peso: #{paciente[0].peso} kg
-              p Altura: #{paciente[0].altura}
-              p IMC: #{imc}
-                if (imc >= 18.5 && imc < 24.99)
-                    p Peso normal
-                    p ID: #{paciente[0].id}
-                    p Nome: #{paciente[0].nome_completo}
-                    p Nascimento: #{paciente[0].nascimento}
-                    p Peso: #{paciente[0].peso} kg
-                    p Altura: #{paciente[0].altura}
-                    p IMC: #{imc}
-                      if (imc >= 25 && imc < 29.99)
-                        p Acima do peso normal
-                        p ID: #{paciente[0].id}
-                        p Nome: #{paciente[0].nome_completo}
-                        p Nascimento: #{paciente[0].nascimento}
-                        p Peso: #{paciente[0].peso} kg
-                        p Altura: #{paciente[0].altura}
-                        p IMC: #{imc}
+              p ID: #{armazenaPaciente.id}
+              p Nome: #{armazenaPaciente.nome_completo}
+              p Idade: #{idade}
+              p Peso: #{armazenaPaciente.peso} kg
+              p Altura: #{armazenaPaciente.altura}
+              p IMC: #{imc.toFixed(2)}
+            else if (imc >= 18.5 && imc < 24.99)
+              p Peso normal
+              p ID: #{armazenaPaciente.id}
+              p Nome: #{armazenaPaciente.nome_completo}
+              p Idade: #{idade}
+              p Peso: #{armazenaPaciente.peso} kg
+              p Altura: #{armazenaPaciente.altura}
+              p IMC: #{imc.toFixed(2)}
+            else if (imc >= 25 && imc < 29.99)
+              p Acima do peso normal
+              p ID: #{armazenaPaciente.id}
+              p Nome: #{armazenaPaciente.nome_completo}
+              p Idade: #{idade}
+              p Peso: #{armazenaPaciente.peso} kg
+              p Altura: #{armazenaPaciente.altura}
+              p IMC: #{imc.toFixed(2)}
+            else
+              p A coisa esta feia
+              p ID: #{armazenaPaciente.id}
+              p Nome: #{armazenaPaciente.nome_completo}
+              p Idade: #{idade}
+              p Peso: #{armazenaPaciente.peso} kg
+              p Altura: #{armazenaPaciente.altura}
+              p IMC: #{imc.toFixed(2)}
