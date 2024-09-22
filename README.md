@@ -1,3 +1,5 @@
-# Curso de Desenvolvimento de Sistemas - Senai
+# Repositório dos cursos feitos no Senai
 
-* Aulas de Frontend, Backend, mobile e banco de dados.
+### Cursos -
+* Desenvolvimento de Sistemas
+* PowerBI
