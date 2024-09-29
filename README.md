@@ -1,7 +1,5 @@
 # Repositório dos cursos feitos no Senai
 
-## Cursos -
-
 ### Desenvolvimento de Sistemas -
 ## 1° Semestre - https://github.com/batista29/senai/tree/main/1DES
 * Web - HTML, CSS
